@@ -111,7 +111,6 @@ class TicTacToe
       @winner = "O"
             return "O"
     else
-            # nil 
     end
     end
     # if draw?
@@ -122,7 +121,7 @@ class TicTacToe
   
   def play
   turn until over?
-  binding.pry
+  # binding.pry
   end
   
 end  
