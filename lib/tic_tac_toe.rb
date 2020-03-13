@@ -115,6 +115,7 @@ class TicTacToe
     # if draw?
     #   return nil
     # end 
+    nil
    end
   
   def play
