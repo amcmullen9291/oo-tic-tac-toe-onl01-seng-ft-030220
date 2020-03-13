@@ -110,6 +110,8 @@ class TicTacToe
     elsif combo.all? {|index| @board[index]=="O"}
       @winner = "O"
             return "O"
+    else
+            # nil 
     end
     end
     # if draw?
