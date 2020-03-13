@@ -115,7 +115,7 @@ class TicTacToe
     # if draw?
     #   return nil
     # end 
- # end
+  end
   
   def play
   turn until over?
