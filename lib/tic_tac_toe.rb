@@ -89,9 +89,9 @@ class TicTacToe
     end
   end 
   
-  # def full?
-  #   @board.all? {|filled| filled == "X" ||filled == "O"}
-  # end
+   def full?
+     @board.all? {|filled| filled == "X" ||filled == "O"}
+   end
   
   # def draw?
   #   !won? && full?
