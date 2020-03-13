@@ -122,7 +122,7 @@ class TicTacToe
   def play
   turn until over?
   # binding.pry
-  puts "Congratulations #{winner}"
+  puts "Congratulations #{winner}!"
   end
   
 end  
