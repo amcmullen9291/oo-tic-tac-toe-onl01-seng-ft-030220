@@ -93,33 +93,33 @@ class TicTacToe
      @board.all? {|filled| filled !=  " "}
    end
   
-  # def draw?
-  #   !won? && full?
-  # end
+  def draw?
+    !won? && full?
+  end
 
-  # def over?
-  # won? || draw?
-  # end
+  def over?
+  won? || draw?
+  end
   
-  # def winner 
-  #   WIN_COMBINATIONS.any? do |combo|
-  #   if combo.all? { |index| @board[index]=="X"}
-  #     @winner = "X"
-  #           return "X"
+  def winner 
+    WIN_COMBINATIONS.any? do |combo|
+    if combo.all? { |index| @board[index]=="X"}
+      @winner = "X"
+            return "X"
 
-  #   elsif combo.all? {|index| @board[index]=="O"}
-  #     @winner = "O"
-  #           return "O"
-  #   end
-  #   end
-  #   if draw?
-  #     return nil
-  #   end 
-  # end
+    elsif combo.all? {|index| @board[index]=="O"}
+      @winner = "O"
+            return "O"
+    end
+    end
+    if draw?
+      return nil
+    end 
+  end
   
-  # def play
-  # turn until over?
-  # binding.pry
-  # end
+  def play
+  turn until over?
+  binding.pry
+  end
   
 end  
